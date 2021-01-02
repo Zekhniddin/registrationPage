@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		080B654F25A0A92A00BF7185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B654E25A0A92A00BF7185 /* AppDelegate.swift */; };
 		080B655125A0A92A00BF7185 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B655025A0A92A00BF7185 /* SceneDelegate.swift */; };
-		080B655325A0A92A00BF7185 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B655225A0A92A00BF7185 /* ContentView.swift */; };
 		080B655625A0A92A00BF7185 /* registrationPage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 080B655425A0A92A00BF7185 /* registrationPage.xcdatamodeld */; };
 		080B655825A0A92C00BF7185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 080B655725A0A92C00BF7185 /* Assets.xcassets */; };
 		080B655B25A0A92C00BF7185 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 080B655A25A0A92C00BF7185 /* Preview Assets.xcassets */; };
 		080B655E25A0A92C00BF7185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080B655C25A0A92C00BF7185 /* LaunchScreen.storyboard */; };
 		080B656925A0A92C00BF7185 /* registrationPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B656825A0A92C00BF7185 /* registrationPageTests.swift */; };
 		080B657425A0A92C00BF7185 /* registrationPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B657325A0A92C00BF7185 /* registrationPageUITests.swift */; };
+		080B659525A0A98400BF7185 /* RegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B659425A0A98400BF7185 /* RegistrationScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		080B654B25A0A92A00BF7185 /* registrationPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = registrationPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		080B654E25A0A92A00BF7185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		080B655025A0A92A00BF7185 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		080B655225A0A92A00BF7185 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		080B655525A0A92A00BF7185 /* registrationPage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = registrationPage.xcdatamodel; sourceTree = "<group>"; };
 		080B655725A0A92C00BF7185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		080B655A25A0A92C00BF7185 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		080B656F25A0A92C00BF7185 /* registrationPageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = registrationPageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		080B657325A0A92C00BF7185 /* registrationPageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registrationPageUITests.swift; sourceTree = "<group>"; };
 		080B657525A0A92C00BF7185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		080B659425A0A98400BF7185 /* RegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +101,11 @@
 		080B654D25A0A92A00BF7185 /* registrationPage */ = {
 			isa = PBXGroup;
 			children = (
+				080B658525A0A94000BF7185 /* screens */,
+				080B658425A0A93A00BF7185 /* apputils */,
 				080B654E25A0A92A00BF7185 /* AppDelegate.swift */,
 				080B655025A0A92A00BF7185 /* SceneDelegate.swift */,
-				080B655225A0A92A00BF7185 /* ContentView.swift */,
-				080B655725A0A92C00BF7185 /* Assets.xcassets */,
-				080B655C25A0A92C00BF7185 /* LaunchScreen.storyboard */,
 				080B655F25A0A92C00BF7185 /* Info.plist */,
-				080B655425A0A92A00BF7185 /* registrationPage.xcdatamodeld */,
 				080B655925A0A92C00BF7185 /* Preview Content */,
 			);
 			path = registrationPage;
@@ -137,6 +135,24 @@
 				080B657525A0A92C00BF7185 /* Info.plist */,
 			);
 			path = registrationPageUITests;
+			sourceTree = "<group>";
+		};
+		080B658425A0A93A00BF7185 /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				080B655725A0A92C00BF7185 /* Assets.xcassets */,
+				080B655425A0A92A00BF7185 /* registrationPage.xcdatamodeld */,
+				080B655C25A0A92C00BF7185 /* LaunchScreen.storyboard */,
+			);
+			path = apputils;
+			sourceTree = "<group>";
+		};
+		080B658525A0A94000BF7185 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				080B659425A0A98400BF7185 /* RegistrationScreen.swift */,
+			);
+			path = screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +287,8 @@
 			files = (
 				080B654F25A0A92A00BF7185 /* AppDelegate.swift in Sources */,
 				080B655625A0A92A00BF7185 /* registrationPage.xcdatamodeld in Sources */,
+				080B659525A0A98400BF7185 /* RegistrationScreen.swift in Sources */,
 				080B655125A0A92A00BF7185 /* SceneDelegate.swift in Sources */,
-				080B655325A0A92A00BF7185 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
